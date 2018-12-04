@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel='stylesheet' href='/css.bundle.css' />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script src='/app.bundle.js'></script>
+</head>
+
+<body class="uc">
+    <% include ./partials/navbar %>
+
+    <main role="main">
+            
+                    <div class="request-div">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <h2 class="card-title mx-auto">Create a Maintenance Request</h2>
+                                <hr>
+                                <p class="card-text">Complete this form and click the submit button to send a request.</p>
+        
+                                <br>
+        
+                                <form id="changeRequestForm">
+                                    <div class="form-group row justify-content-center">
+                                        <label for="campusSelect" class="col-sm-2 col-form-label">Campus</label>
+                                        <select class="form-control col-sm-8" id="campusSelect" name="campus">
+                                            <option>Center Hill Research Facility</option>
+                                            <option>Clermont College</option>
+                                            <option>Leased Property</option>
+                                            <option>Off Campus Buildings</option>
+                                            <option>Reading Campus</option>
+                                            <option>UC Blue Ash College</option>
+                                            <option>UC Medical Center</option>
+                                            <option>Uptown Campus East</option>
+                                            <option>Uptown Campus West</option>
+                                            <option>Victory Parkway Campus</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="buildingSelect" class="col-sm-2 col-form-label">Building</label>
+                                        <select class="form-control col-sm-8" id="buildingSelect" name="building">
+                                            <option>VPC Administration Building</option>
+                                            <option>VPC Classroom Building</option>
+                                            <option>VPC Library</option>
+                                            <option>VPC North Laboratory</option>
+                                            <option>VPC Science Building</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="floorSelect" class="col-sm-2 col-form-label">Floor</label>
+                                        <select class="form-control col-sm-8" id="floorSelect" name="floor">
+                                            <option>VPCADMIN01</option>
+                                            <option>VPC Classroom Building</option>
+                                            <option>VPC Library</option>
+                                            <option>VPC North Laboratory</option>
+                                            <option>VPC Science Building</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="roomSelect" class="col-sm-2 col-form-label">Room number</label>
+                                        <input type="number" min="0" max="100" class="form-control col-sm-8" id="roomSelect"
+                                            name="room"></input>
+                                        <!-- <select class="form-control col-sm-10 custom-select" id="roomSelect" name="room"></select> -->
+                                    </div>
+                                    <div class="form-group row justify-content-center">
+                                        <label for="emergencySelect" class="col-sm-2 col-form-label">Emergency</label>
+                                        <select class="form-control col-sm-8" id="emergencySelect" name="emergency">
+                                            <option value=true>Yes</option>
+                                            <option value=false>No</option>
+                                        </select>
+                                    </div>
+        
+                                    <div class="form-group row justify-content-center">
+                                        <label class="col-sm-2 col-form-label" for="descriptionTextArea">Describe the issue</label>
+                                        <textarea class="form-control col-sm-8" rows="3" id="descriptionTextArea" name="description" required></textarea>
+                                    </div>
+        
+                                    <br>
+        
+                                    <div class="form-group row justify-content-center">
+                                        <input type="submit" value="Create" class="form-control col-sm-4 btn btn-primary">
+                                    </div>
+                                </form>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+            
+    </main>
+    
+    <% include ./partials/footer %>
+
+</body>
+
+</html>

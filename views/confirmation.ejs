@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Confirmation
+    </title>
+    <link rel='stylesheet' href='/css.bundle.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body class="uc">
+    <% include ./partials/navbar %>
+
+    <div class="container">
+        <div class="login-form vertical-center">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Thank you</h2>
+                    <p>Your request has been submitted</p>
+                    <p>Confirmation # <%= id %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include ./partials/footer %>
+
+    <link rel='stylesheet' href='/app.bundle.js' />
+</body>
+
+</html>
