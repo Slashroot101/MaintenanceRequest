@@ -1,5 +1,5 @@
 # ForgeMaintenanceRequest
-A demo of using Autodesk's forge API for Autodesk University.
+A demo of using Autodesk's forge API for Autodesk University. There are some bad practices here (like if you look at some of the socketing), but keep in mind this was a quick POC.
 
 # Installation
 
